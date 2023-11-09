@@ -1,0 +1,35 @@
+<%- include('includes/head', {pageTitle: 'login'}) %>
+  <link rel="stylesheet" href="/styles/login.css">
+  </head>
+
+  <body>
+    <header>
+      <%- include('includes/header') %>
+    </header>
+    <section id="login">
+      <form method="post" action="/login">
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="floatingInput" name="id"  value="<%= inputData.id %>" placeholder="Id">
+          <label for="floatingInput">User Id</label>
+        </div>
+        <div class="form-floating">
+          <input type="password" class="form-control" id="floatingPassword" name="password" placeholder="Password">
+          <label for="floatingPassword">Password</label>
+        </div>
+        <hr style="margin: 2rem 0;"/>
+        <% if (inputData.errorMessage) { %>
+          <div class="alert alert-danger" role="alert">
+              <%= inputData.errorMessage %>
+          </div>
+        <% } %>
+        <div id="reserv-btn" class="d-grid gap-2 col-6 mx-auto">
+          <button type="submit" class="btn btn-secondary">로그인</button>
+        </div>
+      </form>
+        <p id="move-regist"><a href="/regist"
+            class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">회원가입
+          </a></p>
+    </section>
+  </body>
+
+  </html>
