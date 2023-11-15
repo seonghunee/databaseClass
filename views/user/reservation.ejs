@@ -1,0 +1,42 @@
+<%- include('../includes/head', {pageTitle: 'reservation' }) %>
+</head>
+<body>
+    <header>
+        <%- include('../includes/header') %>
+    </header>
+    <main class="main-element">
+        <section>
+            <form action="/reservation" method="post">
+                <div>
+                    <label for="designer">디자이너 선택</label>
+                    <select id="designer" class="form-select form-select-lg mb-3" aria-label="Large select example">
+                        <option selected>디자이너</option>
+                        <option value="1" >One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                </div>
+                <div>
+                    <label for="date">날짜</label>
+                    <input name="date" style="width: 100%; height: 2rem;" type="date">
+                    <label for="time">시간</label>
+                    <input name="time" style="width: 100%; height: 2rem;" type="time" min="10:00" max="20:00">
+                </div>
+                <div>
+                    <label for="designer">시술 선택</label>
+                    <select id="designer" class="form-select form-select-lg mb-3" aria-label="Large select example">
+                        <option selected>시술</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                </div>
+                <hr/>
+                <div id="reserv-btn" class="d-grid gap-2 col-6 mx-auto">
+                    <button type="submit" class="btn btn-secondary">예약하기</button>
+                  </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

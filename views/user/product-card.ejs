@@ -1,0 +1,8 @@
+<h2>제품</h2>
+<hr style=" margin: 0 auto 2rem auto;"/>
+<% for (const product of productList) {%>
+<div id="beauty-card">
+    <p><%= product.name %><hr class="hr"></p>
+    <p><%= product.price %></p>
+</div>
+<% } %>

@@ -1,0 +1,21 @@
+
+.card {
+    margin: 0 auto 0.5rem auto;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+#behavior {
+    display: flex;
+    align-items: center;
+}
+
+.link-offset-2 {
+    margin-right: 1rem;
+}
+
+img {
+    height: 100%;
+    object-fit: cover;
+}

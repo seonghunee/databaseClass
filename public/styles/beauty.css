@@ -1,0 +1,6 @@
+#beauty-card {
+    display: flex;
+    justify-content: space-around;
+}
+
+.hr {border: none;border-top: 3px dotted blue;color: #fff;background-color: #fff;height: 1px;width: 50%;}

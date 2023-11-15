@@ -9,6 +9,7 @@ const errorHandlerMiddleware = require('./middlewares/error-handler');
 
 const homeRoutes = require('./routes/home-route');
 const authRoutes = require('./routes/auth-route');
+const userRoutes = require('./routes/user-route');
 
 const app = express();
 
@@ -29,6 +30,7 @@ app.use(checkAuthStatusMiddleware);
 
 app.use(homeRoutes);
 app.use(authRoutes);
+app.use(userRoutes);
 
 app.use(notFoundHandlerMiddleware);
 app.use(errorHandlerMiddleware);

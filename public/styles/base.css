@@ -1,4 +1,32 @@
+h2 {
+    text-align: center;
+    margin: 5rem auto 2rem auto;
+}
+
 section {
     margin: 8rem auto;
     width: 40%;
+}
+
+.mypage {
+    margin: 5rem auto;
+}
+
+footer div{
+    margin-top: 3rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+footer a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+}
+
+footer img {
+    width: 30px;
+    height: 30px;
 }

@@ -1,0 +1,21 @@
+<%- include('../includes/head', {pageTitle: 'designer'}) %>
+<link rel="stylesheet" href="/styles/designer.css">
+</head>
+<body>
+<header>
+    <%- include('../includes/header') %>
+</header>
+<main>
+    <section>
+        <h2>디자이너</h2>
+        <hr style=" margin: 0 auto 2rem auto;"/>
+        <%- include('./designer-card') %>
+        <%- include('./designer-card') %>
+    </section>
+    <h2>스태프</h2>
+    <hr style=" margin: 0 auto 2rem auto;"/>
+    <%- include('./designer-card') %>
+    <%- include('./designer-card') %>
+</main>
+</body>
+</html>

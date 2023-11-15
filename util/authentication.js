@@ -1,5 +1,5 @@
 function createUserSession(req, user, action) {
-    req.session.uid = user.name;
+    req.session.uid = user.id;
     req.session.position = user.position;
 
     req.session.save(action);

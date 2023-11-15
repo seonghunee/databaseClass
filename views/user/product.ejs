@@ -1,0 +1,14 @@
+<%- include('../includes/head', {pageTitle: 'product'}) %>
+<link rel="stylesheet" href="/styles/beauty.css">
+</head>
+<body>
+<header>
+    <%- include('../includes/header') %>
+</header>
+<main>
+    <section>
+        <%- include('./product-card', {productList: productList}) %>
+    </section>
+</main>
+</body>
+</html>

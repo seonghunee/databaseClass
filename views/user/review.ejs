@@ -1,0 +1,17 @@
+<%- include('../includes/head', {pageTitle: 'designer'}) %>
+</head>
+<body>
+<header>
+    <%- include('../includes/header') %>
+</header>
+<main>
+    <section>
+        <h2>리뷰</h2>
+        <hr style=" margin: 0 auto 2rem auto;"/>
+        <% for (const review of reviewList) { %>
+        <%- include('./review-card', {review: review}) %>
+        <% } %>
+    </section>
+</main>
+</body>
+</html>

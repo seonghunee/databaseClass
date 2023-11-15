@@ -1,4 +1,4 @@
-<%- include('includes/head', {pageTitle: 'regist' }) %>
+<%- include('includes/head', {pageTitle: 'mypage' }) %>
     <link rel="stylesheet" href="/styles/regist.css">
     </head>
 
@@ -7,8 +7,8 @@
             <%- include('includes/header') %>
         </header>
         <section>
-            <h2>가입하기</h2>
-            <form method="post" action="/regist">
+            <h2>My Page</h2>
+            <form method="post" action="/mypage-edit">
                 <div class="form-floating mb-3">
                     <input type="text" class="form-control" id="floatingInput" placeholder="Name" name="name"
                         value="<%= inputData.name %>" required>
@@ -46,7 +46,7 @@
                     <% } %>
                         <hr style="margin: 2rem 0;" />
                         <div id="reserv-btn" class="d-grid gap-2 col-6 mx-auto">
-                            <button type="submit" class="btn btn-secondary">회원가입</button>
+                            <button type="submit" class="btn btn-secondary">회원정보 수정</button>
                         </div>
             </form>
         </section>
